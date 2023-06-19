@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(splashColor: Colors.amber),
       home: ScreenHome(),
+      themeMode: ThemeMode.dark,
     );
   }
 }

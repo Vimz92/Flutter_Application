@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:master_flutter_application/login_screen.dart';
 
 class ScreenHome extends StatelessWidget {
   const ScreenHome({super.key});
@@ -36,13 +37,12 @@ class ScreenHome extends StatelessWidget {
                 obscureText: true,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(), hintText: 'Password')),
+            SizedBox(height: 10),
             ElevatedButton.icon(
                 onPressed: () {
-                  if (_usernameController == _passwordController) {
-                    print('username and password is valid');
-                  } else {
-                    print('username and password is not valid');
-                  }
+                  Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
+                    return ScreenLogin();
+                  }));
                 },
                 icon: Icon(Icons.check),
                 label: Text('login'))

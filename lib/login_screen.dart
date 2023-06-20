@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:master_flutter_application/widgets/drawer.dart';
 
 class ScreenLogin extends StatelessWidget {
   const ScreenLogin({super.key});
@@ -6,7 +7,11 @@ class ScreenLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Welcome to login page')),
+      appBar: AppBar(
+        title: Text('Catalog App'),
+        backgroundColor: Colors.red,
+      ),
+      drawer: MyDrawer(),
       body: Column(
         children: [
           ElevatedButton(

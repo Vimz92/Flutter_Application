@@ -10,7 +10,7 @@ class MyDrawer extends StatelessWidget {
         'https://pbs.twimg.com/profile_images/1656388891014832128/KzbMje0n_400x400.jpg';
     return Drawer(
       child: Container(
-        color: Colors.red,
+        color: Colors.deepPurple,
         child: ListView(
           // padding: EdgeInsets.zero,
           children: [
@@ -18,7 +18,7 @@ class MyDrawer extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 child: UserAccountsDrawerHeader(
                     margin: EdgeInsets.zero,
-                    decoration: BoxDecoration(color: Colors.red),
+                    decoration: BoxDecoration(color: Colors.deepPurple),
                     accountName: Text('Vimal Vinayraj'),
                     accountEmail: Text('vimalvinayraj"gmail.com'),
                     currentAccountPicture: CircleAvatar(
